@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  yunzai-bot:
+    container_name: yunzai-bot
+    image: swr.cn-south-1.myhuaweicloud.com/sirly/yunzai-bot:v3plus
+    restart: always
+    volumes:
+      - ./yunzai/config:/app/Yunzai-Bot/config/config/ # 配置文件
+      - ./yunzai/genshin_config:/app/Yunzai-Bot/plugins/genshin/config # 配置文件
+      - ./yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
+      - ./yunzai/data:/app/Yunzai-Bot/data # 数据文件
+      - ./yunzai/plugins:/app/Yunzai-Bot/plugins # 插件文件
+      # 可以自行添加映射目录 - ./目录名字:/app/Yunzai-Bot/目录名字
+    ports:
+      - "50831:50831"
+      - "50830:50830"
+      - "50829:50829"
+      - "50828:50828"
+      - "50827:50827"
+      - "50826:50826"
+      #自己可以端口映射- "docker端口添加:设备端口" ，当前只增加了几个防备端口
+    depends_on:
+      redis: { condition: service_healthy }
+
+  redis:
+    container_name: yunzai-redis
+    image: redis:alpine
+    restart: always
+    volumes:
+      - ./redis/data:/data
+      - ./redis/logs:/logs
+    healthcheck:
+      test: ["CMD", "redis-cli", "PING"]
+      start_period: 10s
+      interval: 5s
+      timeout: 1s
