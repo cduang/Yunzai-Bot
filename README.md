@@ -2,6 +2,8 @@
 
 一切基于Yunzai-bot更改，本人不负责更新、回答问题，Yunzai-Bot及本修改版属于开源项目，禁止贩卖！！！
 
+本项目已增加ffmpeg 环境和 Python 环境
+
 ####想使用docker版Yunzai-Botv2版本的请参考https://github.com/Le-niao/Yunzai-Bot/issues/80
 
 ```
