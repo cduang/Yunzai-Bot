@@ -2,7 +2,10 @@ version: "3.9"
 services:
   yunzai-bot:
     container_name: yunzai-bot
-    image: swr.cn-south-1.myhuaweicloud.com/sirly/yunzai-bot:v3plus
+    image: swr.cn-south-1.myhuaweicloud.com/sirly/yunzai-bot:v3plus     # 使用扩展镜像，包含ffmpeg和python
+    # image: swr.cn-south-1.myhuaweicloud.com/sirly/yunzai-bot:v3       # 使用云端精简镜像
+    # image: sirly/yunzai-bot:v3                                        # 使用Docker Hub源
+    # image: sirly/yunzai-bot:v3plus 
     restart: always
     volumes:
       - ./yunzai/config:/app/Yunzai-Bot/config/config/ # 配置文件
@@ -15,9 +18,6 @@ services:
       - "50831:50831"
       - "50830:50830"
       - "50829:50829"
-      - "50828:50828"
-      - "50827:50827"
-      - "50826:50826"
       #自己可以端口映射- "docker端口添加:设备端口" ，当前只增加了几个防备端口
     depends_on:
       redis: { condition: service_healthy }
