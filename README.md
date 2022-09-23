@@ -8,7 +8,7 @@
 
 ##
 
-#### 安装docker
+# 安装docker
 
 已经安装docker的直接跳过，但是注意确保已经安装docker-compose
 
@@ -18,7 +18,7 @@ docker-compose --help
 软路由openwrt系统可以直接在软件包查看，没有就直接安装
 ```
 
-# Linux[centos/ubuntu等]
+#### Linux[centos/ubuntu等]
 安装docker脚本安装
 ```
 curl -fsSL get.docker.com -o get-docker.sh
@@ -30,7 +30,7 @@ sudo sh get-docker.sh --mirror Aliyun
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.11.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-# Windows 和 Mac
+#### Windows 和 Mac
 
 请参考以下文档进行安装：
 
