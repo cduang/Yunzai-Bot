@@ -6,15 +6,6 @@
 
 ####想使用docker版Yunzai-Botv2版本的请参考https://github.com/Le-niao/Yunzai-Bot/issues/80
 
-```
-Yunzai-bot原版：
-
-https://github.com/Le-niao/Yunzai-Bot
-
-https://gitee.com/Le-niao/Yunzai-Bot
-
-```
-
 ##
 
 #### 安装docker
@@ -27,12 +18,18 @@ docker-compose --help
 软路由openwrt系统可以直接在软件包查看，没有就直接安装
 ```
 
-# Linux
-使用一键脚本安装（荐）
+# Linux[centos/ubuntu等]
+安装docker脚本安装
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh --mirror Aliyun
 ```
+
+安装docker-compose脚本安装
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.11.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
 # Windows 和 Mac
 
 请参考以下文档进行安装：
@@ -120,7 +117,7 @@ docker exec -it yunzai-bot /bin/sh
 
 回到下载要运行时候的文件夹
 
-直接丢Yunzai-Bot\plugins\example文件夹就行
+直接丢yunzai-Bot\plugins\example文件夹就行
 
 （注意：确保是适用于V3版本的js插件）
 
