@@ -57,7 +57,7 @@ Docker一从入门到实践：https://yeasy.gitbook.io/docker_practice/install/w
 # 配置文件
 
 #下载文件
-要运行Yunzai-bot文件夹输入以下指令进行clone
+要运行Yunzai-bot，先输入以下指令进行clone下载文件
 ```
 国内机器:git clone https://gitee.com/hbj2457/Yunzai-Bot.git
 国外机器:git clone https://github.com/hbj2457/Yunzai-Bot.git
