@@ -142,7 +142,7 @@ docker exec -it yunzai-bot /bin/sh
 
 https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index
 
-## 插件推荐：
+## 插件推荐：(记得安装插件依赖，方法在上面)
 
 Miao-Plugin(https://gitee.com/yoimiya-kokomi/miao-plugin)
 
