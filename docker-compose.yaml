@@ -8,7 +8,7 @@ services:
     # image: sirly/yunzai-bot:v3plus 
     restart: always
     volumes:
-      - ./yunzai/config:/app/Yunzai-Bot/config/config/ # 配置文件
+      - ./yunzai/config/config:/app/Yunzai-Bot/config/config/ # 配置文件
       - ./yunzai/genshin_config:/app/Yunzai-Bot/plugins/genshin/config # 配置文件
       - ./yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
       - ./yunzai/data:/app/Yunzai-Bot/data # 数据文件
