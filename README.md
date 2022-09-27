@@ -75,7 +75,7 @@ git clone https://github.com/hbj2457/Yunzai-Bot.git
 
 # 启动
 
-先cd Yunzai-Bot文件夹
+先cd进入Yunzai-Bot文件夹
 ```
 cd Yunzai-Bot
 ```
