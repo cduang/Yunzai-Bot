@@ -16,7 +16,7 @@
 
 可在任意支持 docker 的 amd64 架构或 arm64 架构的操作系统（包括Linux、Windows、MacOS等）上轻松运行
 
-结合 docker 部署脚本，可以交互式配置喵喵插件和Python插件，免除手动安装插件、配置环境和编译 ffmpeg 的烦恼
+结合 docker 部署脚本，免除手动配置环境和编译 ffmpeg 的烦恼
 
 所有用户数据均已映射到主机，方便备份和迁移
 
