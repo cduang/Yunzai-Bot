@@ -1,4 +1,4 @@
-# redis地址
+# redis地址(docker不填127.0.0.1，必须redis)
 host: redis
 # redis端口
 port: 6379 
