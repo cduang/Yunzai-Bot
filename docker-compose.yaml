@@ -9,10 +9,11 @@ services:
     restart: always
     volumes:
       - ./yunzai/config:/app/Yunzai-Bot/config # 配置文件
-      - ./yunzai/genshin_config:/app/Yunzai-Bot/plugins/genshin/config # 配置文件
+      - ./yunzai/plugins/genshin/config:/app/Yunzai-Bot/plugins/genshin/config # 配置文件
       - ./yunzai/logs:/app/Yunzai-Bot/logs # 日志文件
       - ./yunzai/data:/app/Yunzai-Bot/data # 数据文件
       - ./yunzai/plugins:/app/Yunzai-Bot/plugins # 插件文件
+      - ./yunzai/resources:/app/Yunzai-Bot/resources # 缓存文件
       # 可以自行添加映射目录 - ./目录名字:/app/Yunzai-Bot/目录名字
     ports:
       - "50831:50831"
